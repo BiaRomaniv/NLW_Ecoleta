@@ -1,0 +1,116 @@
+#page-home {
+    height: 100vh; /* 100 x o viewport???*/
+    background: url('../assets/home-background.svg') no-repeat;
+    background-position: 35vw bottom; /* para mudar a localização no eixo y???*/
+}
+
+#page-home .content{
+    /* É UM DISPLAY BLOCK AINDA, O QUE SOBRA DO 90% DA MARGIN ELE ADICIONA AUTOMATICAMENTE AO RIGHT*/
+    width: 90%; /* GARANTE QUE A CAIXA DO DIV SOMENTE VAI OCUPAR 90% DA PAGINA*/
+    max-width: 1100px; /* GARANTE QUE NÃO AUMENTA A PARTIR DE 110OPX*/ 
+    height: 100%;
+    
+    /* PREENCHIMENTO AUTOMATICO DAS MARGINS DA CAIXA CONTENT, DESSA FORMA PREENCHE AS DUAS LATERAIS IGUALMENTE E CENTRALIZA O CONTEÚDO*/ 
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    
+    /*VAMOS AGRUPAR*/
+    margin: 0 auto; /* ZERO NO TOP E NO BOTTOM E AUTO NA ESQUERDA E DIRETIA*/
+
+    display: flex; /* ELEMENTOS LADO A LADO*/
+    flex-direction: column; /*ELEMENTOS ALINHADOS EM COLUNAS*/
+}
+
+#page-home header{
+    margin-top: 48px;
+    display: flex; /* LADO A LADO ALINHADOS*/
+    align-items: center; /* ALINHAMENTO VERTICAL DOS ELEMENTOS*/
+    justify-content: space-between; /*JUSTIFICA OS ELEMENTOS COLOCANDO UM ESPAÇO ENTRE ELES OS MANTENDO SEPARADOS IGUALMENTE*/
+}
+
+#page-home header a{
+    display: flex;
+    color: var(--title-color);
+    font-weight: 700;
+    
+}
+
+#page-home header a span{
+    margin-right: 16px ;
+    display: flex;
+    background-image: url('../assets/log-in.svg'); 
+    width: 20px;
+    height: 20px;
+}
+
+#page-home main{
+    max-width: 560px;
+
+   /*height: 600px; /* PIXEL NÃO É FLEXÍVEL*/
+    flex: 1; /* PARA UM PREENCHIMENTO MAIS DINÂMICO*/
+
+    display: flex;
+    flex-direction: column;  /*ELEMENTOS ALINHADOS EM COLUNAS*/
+    justify-content: center; /* COMO A DIREÇÃO AGORA É EM COLUNA, O ALINHAMENTO JUSTIFICADO DOS ELEMENTOS SEGUE A DIREÇÃO DE COLUNA, OU SEJA, VERTICALMENTE CENTRALIZADO*/
+}
+
+#page-home main h1{
+    font-size: 54px;
+    color: var(--title-color);
+}
+
+#page-home main P{
+    font-size: 24px;
+    line-height: 38px;  /* ESPAÇAMENTO PARA TEXTOS*/
+    margin-top: 24px;
+}
+
+#page-home main a{
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+    border-radius: 8px; /* ARREDONDAMENTO DOS CANTOS DO BOTAO*/
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 40px;
+
+    background-color: var(--primary-color);
+
+  
+    transition: 400ms; /* TEMPO DE TRANSIÇÃO ENTRE A COR ATUAL E A COR CONFIGURADA NO HOVER*/
+}
+
+#page-home main a:hover{ /* HOVER É A PROPRIEDADE QUE PEGA A POSIÇÃO DO MOUSE EM CIMA DO OBJETO*/
+    background-color: #2fb86e;
+}
+
+#page-home main a span{ /* SPAN ABRE ESPAÇO PARA INSERÇÃO DO ICONE*/
+    width: 72px;
+    height: 72px;
+
+    border-top-left-radius: 8px; /* HAVIA UMA BORDA QUADRADA POR CONTA DO SPAN*/
+    border-bottom-left-radius: 8px;
+
+    background-color: rgba(0,0,0, 0.08);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-home main a span::after{ /*PSEUDO ELEMENTO*/
+    content: "";
+    background-image: url('../assets/search.svg');
+
+    width: 20px; /* NECESSARIO DEFINIR ALTURA E LARGURA PARA QUE O ICONE SEJA CONFIGURADO*/
+    height: 20px;
+}
+
+#page-home main a strong{
+    flex:1; /* ELEMENTO CRESCE DENTRO DA CAIXA TODA*/
+    color: white;
+    text-align: center;
+}
+

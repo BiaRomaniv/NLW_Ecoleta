@@ -1,0 +1,110 @@
+#page-create-point{
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto; /*ESPAÇAMENTO LATERAL AUTOMÁTICO*/
+
+}
+
+#page-create-point header {
+    margin-top: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-create-point header a {
+    display: flex;
+    color: var(--title-color);
+    font-weight: 700;
+}
+
+#page-create-point header a span {
+    margin-right: 16px ;
+    background-image: url('../assets/arrow-left.svg'); /* SOMENTE ESSA ATRIBUIÇÃO NÃO DISPONOBILIZA O ÍCONE, É NECESSÁRIO O TAMANHO E O DISPLAY*/
+    display: flex;
+    width: 20px;
+    height: 24px;
+}
+
+form {
+    background-color: white;
+
+    margin: 80px auto;
+    padding: 64px; /*PREENCHIMENTO INTERNO DA CAIXA*/
+
+    border-radius: 8px;
+
+    max-width: 730px ;
+ }
+
+ form h1 {
+    font-size: 36px;
+ }
+
+ /*FIELDSET DADOS DA ENTIDADE*/
+ form fieldset {
+    margin-top: 64px;
+    border: 0;
+}
+
+form legend {
+    margin-bottom: 40px;
+}
+
+form legend h2 {
+    font-size: 24px;
+}
+
+form .field {
+    flex: 1; /* PARA ESTICAR OS ELEMENTOS QUE ESTÃO NO FIELD GROUP LADO A LADO ESTICADOS*/
+    display: flex; /*UM ELEMENTO AO LADO DO OUTRO*/
+    flex-direction: column; /*ALINHOU EM COLUNA FLEX*/
+    margin-bottom: 24px;
+}
+
+form .field-group {
+    display: flex;
+}
+
+form input, form select {
+    background-color: #f0f0f5;
+
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    outline: none; /*LINHA QUE APARECE NA BORDA QUANDO ESTÁ COM O FOCO DO MOUSE E TECLADO*/
+}
+
+form select { /* RESETAR OS ESTILOS DO CHROME*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+form .field-group .field + .field { /* PEGANDO UM FIELD GROUP COM UM FIELD SEGUIDO DE UM FIELD! PEGOU O SEGUNDO FIELD (APÓS O +)*/
+    margin-left: 24px;
+}
+
+form button {
+    width: 260px;
+    height: 56px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    border: 0;
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 40px;
+    transition:  background-color 400ms; /* SE NÃO ESPECIFICAR O TRANSITION ELE APLICA EM TODOS AS PROP DO ELEMENTO*/
+}
+
+form button:hover {
+    background-color: #2fb86e;
+}
