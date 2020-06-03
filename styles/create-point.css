@@ -108,3 +108,44 @@ form button {
 form button:hover {
     background-color: #2fb86e;
 }
+
+.items-grid {
+    display: grid; /*PAARA DIVIDIR EM COLUNAS*/
+    grid-template-columns: 1fr 1fr 1fr; /*200px 200px 200px 3 colunas de 200px, 1fr 1 fr 1 fr 3 colunas flexiveis*/
+    gap: 16px; /* FORMA DE COLOCAR MARGIN SEM TER QUE IR INDIVIDUALMENTE*/
+}
+
+.items-grid li {
+    background-color: #f5f5f5;
+    list-style: none;
+
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+    height: 180px;
+    padding: 32px 24px 16px;
+    display: flex;
+    flex-direction: column; /*FLUXO INVERTEU DE LINHA PRA COLUNA*/
+    align-items: center; /* COMO O FLUXO É COLUNA, ELE ESPAÇA CENTRAL DE FORMA VERTICAL*/
+    justify-content: space-between;
+
+    text-align: center;
+    cursor: pointer; /* MODIFICAÇÃO DO CURSOR EM CIMA DO ELEMENTO*/
+}
+
+.items-grid li span {
+    flex: 1; /* PREENCHE ESPAÇO SOZINHO*/
+
+    display: flex; /*ALINHAR*/
+    align-items: center;
+    color: var(--title-color);
+    margin-top: 10px;
+}
+
+.items-grid li.selected { /* BUSCA O LI QUE TEM A CLASSE .SELECTED, SE SEPARAR SIGNIFICA QUE DENTRO DO LI UM ELEMENTO TEM A CLASSE SELECTED*/
+    background: #e1faec;
+    border: 2px solid #34cb79;
+}
+
+.items-grid li img, .items-grid li span{
+    pointer-events: none; /* EVITAR QUE OS FILHOS DO LI RECEBAM O CLICK DO OUVIDOR DE EVENTOS NO JS, PORQUE O TARGET É SÓ O LI*/
+} 

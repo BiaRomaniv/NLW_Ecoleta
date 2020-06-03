@@ -14,6 +14,7 @@
     <!-- ACESSANDO A FOLHA DE ESTILOS-->
     <link rel="stylesheet" href="styles/main.css"> 
     <link rel="stylesheet" href="styles/home.css"> 
+    <link rel="stylesheet" href="styles/modal.css"> 
     <link rel="stylesheet" href="styles/responsive.css"> 
 
 </head>
@@ -26,7 +27,7 @@
             <header>
                 <img src="/assets/logo.svg" alt="Logomarca">             
         
-                <a href="http://google.com.br">
+                <a href="create-point.html">
                     <span> <!-- TAG PARA CONFIGURAÇÃO DE ICONES --></span>
                     Cadastre um ponto de coleta
                 </a>
@@ -50,7 +51,27 @@
 
     </div>
     
-   
+    <div id="modal" class="hide"> <!--TELA PRETA COMPLETA-->
+        <div class="content"> <!--CAIXA DO FORMULARIO-->
+            <div class="header">
+                <h1> Pontos de Coleta</h1>
+                <a href="#">Fechar</a>
+            </div>
+
+            <form action="search-results.html">
+                <label for="search">Cidade</label>
+                <div class="search field">
+                    <input 
+                    type="text" name="search" placeholder="Pesquise por cidade">
+                    <button>
+                        <img src="/assets/search.svg" alt="Buscar">
+                    </button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+   <script src="/scripts/index.js"></script>
 
     
 </body>
