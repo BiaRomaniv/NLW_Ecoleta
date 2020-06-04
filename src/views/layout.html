@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- GARANTE QUE FUNCIONARÁ EM DIFERENTES TAMANHOS DE TELAS-->
+        <title>Ecoleta</title>
+
+        {% block title %}
+            <title>Ecoleta</title>
+            {# padrao #}
+        {% endblock title %}
+
+        <!-- ACESSADO A CONFIGURAÇÃO DE FONTE DO GOOGLE-->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Ubuntu:wght@700&display=swap" rel="stylesheet"> -->
+        <!-- PARA QUE NÃO TENHAMOS QUE ACESSAR DOIS LINKS SEPARADOS DO GOOGLE, FAREMOS UMA JUNÇÃO -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+        <!-- DESTA FORMA AS FONTES UBUNTO E ROBOTO TAMANHO 700 SERÃO DISPONIBILIZADAS-->
+
+        <!-- ACESSANDO A FOLHA DE ESTILOS-->
+        <link rel="stylesheet" href="styles/main.css">
+
+        {% block styles %}{% endblock styles %}
+
+        <link rel="stylesheet" href="styles/responsive.css">
+
+    </head>
+    <body>
+
+        <div id="{{ bodyId }}">
+             {% block content %}{% endblock content %}
+        </div>
+
+        {% block modal %}{% endblock modal %}
+
+        {% block scripts %}{% endblock scripts %}
+
+    </body>
+</html>
