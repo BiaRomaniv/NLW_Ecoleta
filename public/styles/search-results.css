@@ -1,11 +1,15 @@
+body{
+    background-color: white;
+}
 body::after{ /*PSEUDO ELEMENTO PARA UM OBJETO APÓS O BODY*/
     content: ""; /* VAZIO POIS NÃO PRECISAMOS DO CONTÉUDO, APENAS COR*/
-    position: fixed; /*POSIÇÃO FIXA PARA QUE FIQUE SEMPRE COMEÇANDO DO 0 DA PÁGINA*/
-    background: white;
-    top: 260px;/*PARTIR DO TOP 260X INICIA O PREENCHIMENTO DO OBJETO*/
+    position: absolute; /*POSIÇÃO FIXA PARA QUE FIQUE SEMPRE COMEÇANDO DO 0 DA PÁGINA*/
+    background: #f0f0f5;
+    top: 0px;/*PARTIR DO TOP 260X INICIA O PREENCHIMENTO DO OBJETO*/
     right: 0; /*PARA PREENCHER TUDO ATÉ A DIREITA*/
     left: 0; /*PARA PREENHCER TUDO ATÉ A ESQUERDA*/
     bottom: 0; /*PARA PREENCHER TUDO ATÉ EMBAIXO*/
+    height: 16rem; /*root element*/
     z-index: -1; /* PARA SE POSICIONAR ABAIXO DE TODOS OS OBJETOS, COMO SE FOSSE A FOLHA POR TRAS*/
 }
 
