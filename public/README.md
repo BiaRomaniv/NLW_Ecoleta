@@ -1,11 +1,13 @@
-# NLW
+# NLW - ECOLETA
 ## Next Level Week - Trilha Starter 
-### Exemplo prático site ECOLETA desenvolvido durante a maratona
+### Site ECOLETA
+
+
 #### 1- PRÁTICA
 #### 2- FOCO
 #### 3- GRUPO
 
-Aprendizados iniciais sobre HTML/CSS e GIT/GITHUB
+#### Aprendizados iniciais sobre HTML/CSS e GIT/GITHUB
 
 - [X] Implementação HTML
 - [X] Implementação CSS
