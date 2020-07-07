@@ -2,8 +2,8 @@
 # Next Level Week - Trilha Starter :rocket:
 
 ## Sobre o desafio :boom:
-  Foi realizda uma semana de curso com a Rocketseat, chamada Next Level Week, e nela aprendemos a desenvolver um site. Criamos então um site de coleta de resíduos.
-  Neste site é possível adicionar empresas coletadoras e também realizar a pesquisa de empresas por cidade.
+  Foi realizada uma semana de curso com a Rocketseat, chamada Next Level Week, e nela aprendemos a desenvolver um site de coleta de resíduos.
+  Nele é possível adicionar empresas coletadoras e também realizar a pesquisa de empresas por cidade.
  
 ## Sobre o desenvolvimento :sweat_drops:
   O desenvolvimento foi realizado acompanhando os passos do instrutor Mayk Brito e os materiais utilizados foram disponibilizados pela Rocketseat.
