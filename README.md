@@ -2,12 +2,12 @@
 # Next Level Week - Trilha Starter :rocket:
 
 ## Sobre o desafio :boom:
-  Nesta semana de curso com a Rocketseat, aprendemos a desenvolver um site de coleta de resíduos.
-  Neste site seria possível incluir empresas coletadoras e realizar a pesquisa por cidade.
+  Foi realizda uma semana de curso com a Rocketseat, chamada Next Level Week, e nela aprendemos a desenvolver um site. Criamos então um site de coleta de resíduos.
+  Neste site é possível adicionar empresas coletadoras e também realizar a pesquisa de empresas por cidade.
  
 ## Sobre o desenvolvimento :sweat_drops:
-  O desenvolvimento foi realizado acompanhando os passos do instrutor Mayk Brito e os materiais disponibilizados pela Rocketseat.
-  
+  O desenvolvimento foi realizado acompanhando os passos do instrutor Mayk Brito e os materiais utilizados foram disponibilizados pela Rocketseat.
+    
 ## Sobre o aprendizado :bowtie:
   Além dos conhecimentos de desenvolvimento como HTML, CSS e Javascript, a Next Level Week também orientou sobre os princípios durante o aprendizado de um DEV.
   
@@ -17,7 +17,7 @@
  :point_right: FOCO
  :point_right: GRUPO
 
-  Aprendizados iniciais sobre HTML/CSS e GIT/GITHUB
+  Em resumo alguns aprendizados durante a NLW:
   
 :heavy_check_mark: Implementação HTML
 :heavy_check_mark: Implementação CSS
