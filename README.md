@@ -14,20 +14,28 @@
   São eles:
   
  :point_right: PRÁTICA
+ 
  :point_right: FOCO
+ 
  :point_right: GRUPO
 
   Em resumo alguns aprendizados durante a NLW:
   
 :heavy_check_mark: Implementação HTML
+
 :heavy_check_mark: Implementação CSS
+
 :heavy_check_mark: Implementação Javascript
+
 :heavy_check_mark: Aprendizados sobre Responsividade
+
 :heavy_check_mark: Criação de um GITHUB
+
 :heavy_check_mark: Descobrindo novas oportunidades
+
 :heavy_check_mark: Divertindo-se com os novos conhecimentos adquiridos
+
 :heavy_check_mark: Entrando no mundo DEV
 
-### Status do projeto
-  O projeto está concluído conforme a NLW, porém pode e deverá ser atualizado conforme novos conhecimentos e ideias forem surgindo.
  
+### Status do Projeto: :heavy_check_mark:
