@@ -38,4 +38,4 @@
 :heavy_check_mark: Entrando no mundo DEV
 
  
-### Status do Projeto: :heavy_check_mark:
+### Status do Projeto: :construction: necessitando de ajustes
